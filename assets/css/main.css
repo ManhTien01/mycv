@@ -272,16 +272,16 @@ p {
 .personal-project__link {
     position: relative;
     top: -4px;
-    color: black;
-    text-decoration: none;
+    color: black !important;
+    text-decoration: none !important;
 }
 
 .personal-project__link::before {
-    content: "( ";
+    content: "( " !important;
 }
 
 .personal-project__link::after {
-    content: " )";
+    content: " )" !important;
 }
 
 @keyframes fade {
