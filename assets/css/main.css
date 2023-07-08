@@ -277,12 +277,9 @@ p {
 }
 
 .personal-project__link::before {
-    content: "( " !important;
+    content: "Link: " !important;
 }
 
-.personal-project__link::after {
-    content: " )" !important;
-}
 
 @keyframes fade {
     from {
@@ -338,7 +335,22 @@ p {
     }
 
     .content-event {
-        max-width: 300px;
+        width: 100%;
+    }
+
+    .time-event {
+        margin: 0;
+        position: relative;
+        top: -4px;
+        font-weight: 400;
+    }
+
+    .time-event::before {
+        content: "(";
+    }
+
+    .time-event::after {
+        content: ")";
     }
 }
 
